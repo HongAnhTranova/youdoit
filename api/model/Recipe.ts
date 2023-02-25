@@ -22,6 +22,7 @@ export class Recipe {
 	mainImage = d.manyHasOne(Image)
 	tileImage = d.manyHasOne(Image)
 	stepsGroups = d.oneHasMany(StepGroup, 'recipe')
+	tipGroups = d.oneHasMany(StepGroup, 'recipe')
 }
 @d.Unique('base', 'locale')
 @acl.allow(publicRole, { read: true })

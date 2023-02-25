@@ -17,6 +17,7 @@ export class Locale {
 	recipes = d.oneHasMany(RecipeLocale, 'locale')
 	categories = d.oneHasMany(CategoryLocale, 'locale')
 	stepsGroups = d.oneHasMany(StepGroupLocale, 'locale')
+	stipGroups = d.oneHasMany(StepGroupLocale, 'locale')
 	steps = d.oneHasMany(StepLocale, 'locale')
 	tips = d.oneHasMany(TipLocale, 'locale')
 }
